@@ -117,7 +117,7 @@ export const NavBar = () => {
             <Button as={Link} to="/signup" circular color="pink" animated>
                 <Button.Content visible>Sign Up Free</Button.Content>
                 <Button.Content hidden>
-                    <Icon style={{fontSize: '1.5rem'}} name='arrow right' />
+                    <Icon style={{fontSize: '1rem'}} name='arrow right' />
                 </Button.Content>
             </Button>
         </Menu.Menu>
