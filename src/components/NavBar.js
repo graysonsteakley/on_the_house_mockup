@@ -113,11 +113,11 @@ export const NavBar = () => {
           onClick={(e, {name})=> setCurrPage(name)}
           className = {currPage === 'signin' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
         />
-        <Menu.Menu className= "d-none d-sm-none d-md-flex" position='right'>
+        <Menu.Menu className= "d-none d-sm-none d-md-flex" style={{marginLeft: 'auto', marginRight:'2rem'}}>
             <Button as={Link} to="/signup" circular color="pink" animated>
                 <Button.Content visible>Sign Up Free</Button.Content>
                 <Button.Content hidden>
-                    <Icon name='arrow right' />
+                    <Icon style={{fontSize: '1.5rem'}} name='arrow right' />
                 </Button.Content>
             </Button>
         </Menu.Menu>
