@@ -38,41 +38,62 @@ export const NavBar = () => {
 
     const [currPage, setCurrPage] = useState('home');
     const [dropDown, setDropDown] = useState(false);
+    const [openDropDownIcon, setOpenDropDownIcon] = useState(false);
 
     const toggleMenu = ()=>{
-   
         setDropDown(!dropDown);
+    }
+
+    const toggleIcon = ()=>{
+        setOpenDropDownIcon(!openDropDownIcon);
+    }
+
+    const toggleMenuOff = ()=>{
+        setDropDown(false);
+    }
+
+    const toggleIconOff = ()=>{
+        setOpenDropDownIcon(false);
     }
 
     return (
         <>
         <Menu borderless secondary className="bar-background d-flex align-items-center">
             <Menu.Item
-            as={Link} to="/home"
+            as={Link} to="/"
             name='home'
-            onClick={(e, {name})=> setCurrPage(name)}
+            onClick={(e, {name})=> {
+                    setCurrPage(name);
+                    toggleMenuOff();
+                    toggleIconOff();
+                }
+            }
             className = "d-none d-sm-none d-md-flex align-items-center"
             >
                 <img src="./images/AOH-Bug-White@2x.png"/>
                 <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;All of the house</Header>
             </Menu.Item>
             <Menu.Item
+             as={Link} to="/"
             name='home'
             onClick={(e, {name})=> {
                 setCurrPage(name);
-                toggleMenu();
+                toggleMenuOff();
+                toggleIconOff();
             }}
             className = "d-flex d-sm-flex d-md-none align-items-center"
             >
-                <img src="./images/AOH-Bug-White@2x.png"/>
+                <img src="./images/AOH-Bug-Brand.svg"/>
                 <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;All of the house</Header>
             </Menu.Item>
         <Menu.Item
+          onClick={(e, {name})=> setCurrPage(name)}
+         className = {currPage === 'taters' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
+          
           as={Link} to="/taters"
           name='taters'
           active={currPage === 'taters'}
-          onClick={(e, {name})=> setCurrPage(name)}
-          className = {currPage === 'taters' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
+         
         >
             Taters
         </Menu.Item>
@@ -101,9 +122,19 @@ export const NavBar = () => {
             </Button>
         </Menu.Menu>
         <Menu.Menu className="d-flex d-sm-flex d-md-none" position='right'>
-            <DropDownButton onClick ={()=>toggleMenu()}>
+            <DropDownButton onClick ={()=>{
+                toggleMenu();
+                toggleIcon();
+                }
+            }>
                 <Header as='h1' className="my-auto">  
-                    <Icon name="list" className="iconhover"/> 
+                    { 
+                        openDropDownIcon === true ? (
+                            <Icon style={{color: 'lavender'}} name="close" className="iconhover"/> 
+                        ) : (             
+                            <Icon name="content" className="iconhover"/> )
+
+                    }
                 </Header>
             </DropDownButton>
         </Menu.Menu>
@@ -112,13 +143,13 @@ export const NavBar = () => {
         {   dropDown ? (
 
         <div className="d-flex d-sm-flex d-md-none flex-column text-center">
-            <Link to="/taters"  onClick={()=>toggleMenu()}>
+            <Link to="/taters"  onClick={()=>{toggleMenu(); toggleIconOff();}}>
             <Segment className="hoverDropDown" inverted attached='top'>taters</Segment>
             </Link>
-            <Link to="/eventsat" onClick={()=>toggleMenu()}>
+            <Link to="/eventsat" onClick={()=>{toggleMenu(); toggleIconOff();}}>
             <Segment className="hoverDropDown" inverted attached>Event@</Segment>
             </Link>
-            <Link to="/signin"  onClick={()=>toggleMenu()}>
+            <Link to="/signin"  onClick={()=>{toggleMenu(); toggleIconOff();}}>
             <Segment className="hoverDropDown" inverted attached='bottom'>Sign In</Segment>
             </Link>
         </div>
