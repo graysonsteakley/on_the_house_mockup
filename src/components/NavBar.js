@@ -47,8 +47,8 @@ export const NavBar = () => {
     return (
         <>
         <Menu borderless secondary className="bar-background d-flex align-items-center">
-        <Link to="/">
             <Menu.Item
+            as={Link} to="/home"
             name='home'
             onClick={(e, {name})=> setCurrPage(name)}
             className = "d-none d-sm-none d-md-flex align-items-center"
@@ -67,9 +67,8 @@ export const NavBar = () => {
                 <img src="./images/AOH-Bug-White@2x.png"/>
                 <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;All of the house</Header>
             </Menu.Item>
-        </Link>
-        <Link to="/taters">
         <Menu.Item
+          as={Link} to="/taters"
           name='taters'
           active={currPage === 'taters'}
           onClick={(e, {name})=> setCurrPage(name)}
@@ -77,9 +76,8 @@ export const NavBar = () => {
         >
             Taters
         </Menu.Item>
-        </Link>
-        <Link to = "/eventsat">
         <Menu.Item
+          as={Link} to="/eventsat"
           name='Events'
           active={currPage === 'Events'}
           onClick={(e, {name})=> setCurrPage(name)}
@@ -87,24 +85,20 @@ export const NavBar = () => {
         >
             Events@
         </Menu.Item>
-        </Link>
-        <Link to="/signin">
         <Menu.Item
+          as={Link} to="/signin"
           name='signin'
           active={currPage === 'signin'}
           onClick={(e, {name})=> setCurrPage(name)}
           className = {currPage === 'signin' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
         />
-        </Link>
         <Menu.Menu className= "d-none d-sm-none d-md-flex" position='right'>
-        <Link to="/signup">
-            <Button circular color="pink" animated>
+            <Button as={Link} to="/signup" circular color="pink" animated>
                 <Button.Content visible>Sign Up Free</Button.Content>
                 <Button.Content hidden>
                     <Icon name='arrow right' />
                 </Button.Content>
             </Button>
-        </Link>
         </Menu.Menu>
         <Menu.Menu className="d-flex d-sm-flex d-md-none" position='right'>
             <DropDownButton onClick ={()=>toggleMenu()}>
