@@ -1,0 +1,38 @@
+input.login-form-place[type="text"]
+{
+    max-width: 350px!important;
+    min-width: 100px!important;
+    padding: 0;
+    color: rgba(218, 31, 87,1)!important;
+    background: transparent;
+    border: none;
+    pointer-events: auto;
+}
+
+input.login-form-place[type="password"]
+{
+    max-width: 350px!important;
+    min-width: 100px!important;
+    padding: 0;
+    color: rgba(218, 31, 87,1)!important;
+    background: transparent;
+    border: none;
+    pointer-events: auto;
+}
+
+
+.login-form-place::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    text-align: center;
+    font-weight: bolder;
+    color: rgba(218, 31, 87,0.3)!important;
+    opacity: 1; /* Firefox */
+  }
+  
+  .login-form-place:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(218, 31, 87,0.3)!important;
+  }
+  
+  .login-form-place::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(218, 31, 87,0.3)!important;
+  }
+  

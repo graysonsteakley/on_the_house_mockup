@@ -101,11 +101,11 @@ export const NavBar = () => {
             Taters
         </Menu.Item>
         <Menu.Item
-          as={Link} to="/eventsat"
-          name='Events'
-          active={currPage === 'Events'}
+          as={Link} to="/events"
+          name='events'
+          active={currPage === 'events'}
           onClick={(e, {name})=> setCurrPage(name)}
-          className = {currPage === 'Events' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
+          className = {currPage === 'events' ? "active-text d-none d-sm-none d-md-flex" : "d-none d-sm-none d-md-flex"}
         >
             Events@
         </Menu.Item>
