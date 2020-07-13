@@ -9,6 +9,18 @@ input.login-form-place[type="text"]
     pointer-events: auto;
 }
 
+input.login-form-place[type="email"]
+{
+    max-width: 350px!important;
+    min-width: 100px!important;
+    padding: 0;
+    color: rgba(218, 31, 87,1)!important;
+    background: transparent;
+    border: none;
+    pointer-events: auto;
+}
+
+
 input.login-form-place[type="password"]
 {
     max-width: 350px!important;

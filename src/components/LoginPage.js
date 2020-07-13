@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import { Container, Form } from 'semantic-ui-react'
 import './LoginStyles.css'
@@ -61,6 +61,18 @@ background: transparent;
 `;
 
 export const LoginPage = () => {
+
+
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const onHandleSubmit = (e)=>{
+        e.preventDefault();
+        setUsername('');
+        setPassword('');
+    }
+
+
     return (
       
             <LoginPageContainer className="px-0">
@@ -71,17 +83,23 @@ export const LoginPage = () => {
                     <Form className="mt-5">
                         <Form.Field>
                        
-                        <input className="login-form-place" placeholder='Username' type="text"/>
+                        <input className="login-form-place" 
+                               value={username}
+                               onChange={(e)=>setUsername(e.target.value)}
+                        placeholder='Username' type="text"/>
                         </Form.Field>
                         <Form.Field>
                        
-                        <input className="login-form-place" type="password" placeholder='Password' />
+                        <input className="login-form-place" 
+                               value={password}
+                               onChange={(e)=>setPassword(e.target.value)}
+                        type="password" placeholder='Password' />
                         </Form.Field>
                         <Form.Field>
                         </Form.Field>
                         <div className="btn-group mt-3  ">
                         <div className="center mobile-scale-btn d-flex justify-content-center">
-                            <button className="btn">
+                            <button onClick={(e)=>onHandleSubmit(e)}className="btn">
                                 <svg width="180px" height="60px" viewBox="0 0 180 60" className="border">
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
                                     <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
