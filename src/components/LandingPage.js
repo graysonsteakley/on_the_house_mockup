@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Header, Button, Icon, Embed } from 'semantic-ui-react'
 import {NavBar} from './NavBar'
+import {FadeInSection, FadeInLeft, FadeInRight} from '../utils/FadeInSection'
+
 import Typed from 'react-typed';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -27,11 +29,13 @@ const BlackContainer = styled.div`
 `;
 
 
+
 export const LandingPage = () => {
     return (
         <>
         <div className="container-fluid background-img px-0">
         <Container className ="d-flex background-img-height text-center flex-column align-items-center justify-content-center">
+            <FadeInSection>
             <Header as="h1" style={{color:"white", fontSize: "4rem"}}> 
                 Helping 
                 <Typed
@@ -52,11 +56,14 @@ export const LandingPage = () => {
                 </Typed>
                 &nbsp;succeed is why we exist.
             </Header>
-            <div className="m2-5"></div>
+            </FadeInSection>
+            <div className="my-3"></div>
+        
             <p className="lavender">
                 Helping you build better relationships with your guests and improve your margins.
             </p>
-            <Button className="mt-2" as={Link} to="/signup" style={{width:'50%', backgroundColor:'rgba(218, 31, 87, 0.8)'}} circular animated="vertical">
+         
+            <Button className="mt-3" as={Link} to="/signup" style={{width:'50%', backgroundColor:'rgba(218, 31, 87, 0.8)'}} circular animated="vertical">
                 <Button.Content visible>Create a free account</Button.Content>
                 <Button.Content hidden>
                     <Icon style={{fontSize:"1.5rem"}}name='arrow right' />
@@ -68,12 +75,15 @@ export const LandingPage = () => {
         </Container>
         </div>
         <div className="container-fluid white-container">
+       
             <div className="text-card-panel text-center">
+                <FadeInRight>
                 <Header as="h3" style={{color:'white'}}>Online Ordering Platform</Header>
                 <Header as="h1" className="black">Taters<span style={{fontSize:'1rem', display:'inline-block',transform:'translateY(-1rem)'}}>®</span> to go. Curbside pickup on your terms</Header>
                 <p className="lead">Own the relationship with your customers with little effort.</p>
+                
                 <div className="btn-group">
-
+                
                     <div className="center">
                         <button className="btn">
                             <svg width="180px" height="60px" viewBox="0 0 180 60" className="border">
@@ -94,24 +104,30 @@ export const LandingPage = () => {
                         </button>
                     </div>
                 </div>
+                </FadeInRight>
             </div>
-
+            
             <div className="img-card-panel text-fade-left">
+            <FadeInLeft>
                     <div className="img-card-container">
                         <img src="./images/GettyImages-525498662_ipad-sm-1920.jpg" alt="Worker Holding laptop"/>
                     </div>
+            </FadeInLeft>
             </div>
         </div>
 
         <div  className="container-fluid white-container blackbcg">
             
             <div className="img-card-panel text-fade-left">
+                <FadeInLeft>
                     <div className="img-card-container">
                         <img src="./images/iStock-868935172-sm.jpg" alt="Worker Holding laptop"/>
                     </div>
+                </FadeInLeft>
             </div>
             
             <div className="text-card-panel text-center">
+                <FadeInRight>
                 <Header as="h3" className="active-color">Event Management Platform</Header>
                 <Header as="h1" className="lavender">Events@<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span> makes managing events simple</Header>
                 <p className="lead lightgrey">Events@ is your event planning solution, putting the features you need to manage your events at your fingertips.</p>
@@ -137,6 +153,7 @@ export const LandingPage = () => {
                         </button>
                     </div>
                 </div>
+                </FadeInRight>
             </div>
 
         </div>
@@ -151,11 +168,14 @@ export const LandingPage = () => {
         </div>
 
         <BlackContainer className="text-center">
+            <FadeInSection>
             <Header as="h1">It's Your Dream. Keep It.</Header>
             <p className="lead white">We recognize that you are the backbone of our communities. During these uncertain times and after things return to normal — we are here to help you keep your dream alive.</p>
+            </FadeInSection>
         </BlackContainer>
         
         <div className="background-img-questions text-center p-5">
+        <FadeInSection>
         <Header as="h1" style={{color:"white", fontSize: "3rem"}}>Taters and Events@ are free products helping
               <Typed
                 className="typed"
@@ -170,7 +190,7 @@ export const LandingPage = () => {
                 backSpeed={50}
                 attr="placeholder"
                 loop >
-                <input type="text"/>
+                <input style={{fontSize: '3rem'}}type="text"/>
             </Typed>
         &nbsp;keep their margins.</Header>
                 <p className="lead lavender mt-2">There’s no commitment, contracts, pressure, or obligation.</p>
@@ -182,16 +202,19 @@ export const LandingPage = () => {
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
                                 <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
                             </svg>
-                            <span>Got Questions <Icon style={{fontSize:"1rem"}}name='question' /></span>
+                            <span>Got Questions <i class="fa fa-question-circle" aria-hidden="true"></i></span>
                         </button>
                     </div>
                 </div>
+            </FadeInSection>
         </div>
 
         <BlackContainer className="text-center">
+            <FadeInSection>
             <Header as="h1">Food for Thought</Header>
             <p className="lead white">“People will forget what you said. They will forget what you did.
             But they will never forget how you made them feel.”</p>
+            </FadeInSection>
         </BlackContainer>
        
         </>

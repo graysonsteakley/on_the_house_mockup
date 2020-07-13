@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   background-color: black!important;
@@ -131,7 +132,7 @@ position: relative;
   margin-top: -4.2rem;
   min-height: 95vh;
   position: relative;
-  }
+}
   
   @media only screen and (max-width: 760px) {
   
@@ -591,7 +592,7 @@ svg {
   color: #FFFFFF;
   font-size: 30px;
   margin-top: 15px;
-  z-index: 2;
+  z-index: 3;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
@@ -665,5 +666,50 @@ svg {
   .text-card-panel2{
     width: 100%;
   }
+
+}
+
+
+/* FADE IN SECTION */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, transform .375s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+@media only screen and (min-width : 760px ) {
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(20vh);
+      visibility: hidden;
+      transition: opacity 0.3s ease-out, transform .5s ease-out;
+      will-change: opacity, visibility;
+    }
+    
+    .fade-in-right.is-visible {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+      }
+
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-20vh);
+      visibility: hidden;
+      transition: opacity 0.3s ease-out, transform .25s ease-out;
+      will-change: opacity, visibility;
+    }
+    .fade-in-left.is-visible {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+    }
 
 }
