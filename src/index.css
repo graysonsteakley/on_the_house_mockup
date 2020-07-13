@@ -61,6 +61,13 @@ a, h1{
   z-index: 3;
 }
 
+.bar-background2{
+  background: black!important;
+  margin: 0!important;
+  position: relative;
+  z-index: 3;
+}
+
 @media only screen and (max-width: 760px) {
   
   .bar-background{
@@ -665,6 +672,7 @@ svg {
   
   .text-card-panel2{
     width: 100%;
+
   }
 
 }
@@ -711,5 +719,85 @@ svg {
       transform: none;
       visibility: visible;
     }
+
+}
+
+
+.navbar-container{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+ }
+ 
+ .navbar.hide {
+    top: -50px
+ }
+
+ @keyframes hover-icon{
+   0%{
+    transform: scale(0.9); 
+   }
+
+   50%{
+    transform: scale(1.1); 
+    color: white;
+  }
+
+
+  100%{
+    transform: scale(0.9); 
+  }
+ }
+
+ @keyframes hover-icon-mouse{
+  0%{
+   transform: scale(1.1); 
+  }
+
+  50%{
+   transform: scale(0.9); 
+   color: green;
+ }
+
+
+ 100%{
+   transform: scale(1.1); 
+ }
+}
+
+@keyframes hover-icon-press{
+  0%{
+   transform: scale(1.1); 
+  }
+
+ 100%{
+   transform: scale(0.7) translateY(.2rem); 
+   color: darkgreen;
+ }
+}
+
+ .scale-icon{
+   animation: hover-icon 1s infinite ease-in-out;
+   box-shadow: 1px 2px 2rem rgba(0,0,0,0.6);
+
+ }
+
+ .scale-icon:hover{
+   animation: hover-icon-mouse 0.8s infinite ease-in-out;
+   color: limegreen;
+   cursor: pointer;
+
+ }
+
+ .scale-icon:active{
+  animation: hover-icon-press 0.2s ease-in-out;
+  color: darkgreen;
+  cursor: pointer;
 
 }

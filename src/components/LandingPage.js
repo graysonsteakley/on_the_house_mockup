@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Header, Button, Icon, Embed } from 'semantic-ui-react'
-import {NavBar} from './NavBar'
+import ScrollInNav from '../utils/ScrollInNav'
+import ScrollUp from '../utils/ScrollUp'
+import {DarkNavBar} from './DarkNavBar'
 import {FadeInSection, FadeInLeft, FadeInRight} from '../utils/FadeInSection'
 
 import Typed from 'react-typed';
@@ -27,7 +29,6 @@ const BlackContainer = styled.div`
     }
 
 `;
-
 
 
 export const LandingPage = () => {
@@ -74,6 +75,9 @@ export const LandingPage = () => {
             </p>
         </Container>
         </div>
+        <ScrollInNav scrollInHeight={610}>
+            <DarkNavBar/>
+        </ScrollInNav>
         <div className="container-fluid white-container">
        
             <div className="text-card-panel text-center">
@@ -208,6 +212,12 @@ export const LandingPage = () => {
                 </div>
             </FadeInSection>
         </div>
+
+        <ScrollUp scrollInHeight={1000}>
+            <a href="#">
+            <i style={{fontSize:'3rem'}} class="lavender scale-icon fa fa-angle-up" aria-hidden="true"></i>
+            </a>
+        </ScrollUp>
 
         <BlackContainer className="text-center">
             <FadeInSection>

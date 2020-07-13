@@ -34,7 +34,7 @@ const DropDownButton = styled.div`
 `;
 
 
-export const NavBar = () => {
+export const DarkNavBar = () => {
     const pathname = window.location.pathname;
     //the substr takes the / char and appends the rest.
     const path = pathname === '/' ? 'home' : pathname.substr(1);
@@ -61,7 +61,7 @@ export const NavBar = () => {
 
     return (
         <>
-        <Menu borderless secondary className="bar-background d-flex align-items-center">
+        <Menu  style={{background:'black!important'}} className="bar-background2 d-flex align-items-center">
             <Menu.Item
             as={Link} to="/"
             name='home'
