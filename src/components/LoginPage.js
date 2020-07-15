@@ -77,10 +77,10 @@ export const LoginPage = () => {
       
             <LoginPageContainer className="px-0">
                 
-                <FormContainer>
+                <FormContainer >
                 <FadeInLeft>
-                    <img src="./images/AOH-Bug-White@2x.png" alt="Logo"/>
-                    <Form className="mt-5">
+                    <img className="mb-neg-5" style={{width:'80%', height:'80%'}}src="./images/h-logo.svg" alt="Logo"/>
+                    <Form className="mt-neg-5">
                         <Form.Field>
                        
                         <input className="login-form-place" 
@@ -111,7 +111,7 @@ export const LoginPage = () => {
                     </Form>
                     
                     <p className="lead lavender mt-3">
-                    Want to get your company started on All of the House?
+                    Want to get your company started with On the house?
                     </p>
                     <Link to="/signup" className="active-color">
                         Sign up here

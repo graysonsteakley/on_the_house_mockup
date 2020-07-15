@@ -21,7 +21,8 @@ const ImgContainer = styled.div`
     height: auto;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-top: -7rem;
+    margin-bottom: -10rem;
     img{
         width: 500px;
     }
@@ -40,16 +41,16 @@ export const SignUp = () => {
     return (
         <CreateAccountContainer className="text-center">
             <ImgContainer>
-                <img src="./images/AOH-Logo-Brand.svg" alt="logo"/>
+                <img style={{transform: 'scale(.7)'}}src="./images/h-logo.svg" alt="logo"/>
             </ImgContainer>
             <Header color="black" as="h1" style={{fontSize: '2rem'}}>
-            Create your <span style={{fontWeight:'600', fontSize:'2.5rem'}}>All of the House</span>&nbsp;space
+            Create your <span style={{fontWeight:'600', fontSize:'2.5rem'}}>On the House</span>&nbsp;space
             </Header>
             <p className="lead black mt-3">
-            Get started making your All of the House space by confirming your email address.
+            Get started making your On the House space by confirming your email address.
             </p>
     
-            <Form className="mt-5">
+            <Form className="mt-5 mb-5">
                 <Form.Field>
                 
                 <input 

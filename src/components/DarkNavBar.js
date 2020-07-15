@@ -73,8 +73,8 @@ export const DarkNavBar = () => {
             }
             className = "d-none d-sm-none d-md-flex align-items-center"
             >
-                <img src="./images/AOH-Bug-White@2x.png"/>
-                <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;All of the house</Header>
+                <img className="logo-scale-nav" src="./images/h-logo.svg"/>
+                <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;On the house</Header>
             </Menu.Item>
             <Menu.Item
              as={Link} to="/"
@@ -86,8 +86,8 @@ export const DarkNavBar = () => {
             }}
             className = "d-flex d-sm-flex d-md-none align-items-center"
             >
-                <img src="./images/AOH-Bug-Brand.svg"/>
-                <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;All of the house</Header>
+                <img className="logo-scale-nav-mob" src="./images/h-logo.svg"/>
+                <Header as='h1' className = {currPage === 'home' ? "d-none d-sm-none d-md-flex my-auto" : "d-none d-sm-none d-md-flex my-auto"}>&nbsp;On the house</Header>
             </Menu.Item>
         <Menu.Item
           onClick={(e, {name})=> setCurrPage(name)}

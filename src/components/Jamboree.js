@@ -111,7 +111,7 @@ export const Jamboree = () => {
                             is your free event planning solution putting the features you need every day at your fingertips. 
                         </Header>
                         <Header className="d-block d-sm-block d-md-none" as="h1" style={{fontSize: '2.5rem'}}>
-                            Taters
+                            jamboree
                             <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
                             helps you build stronger relationships with your customers.
                         </Header>
@@ -130,7 +130,7 @@ export const Jamboree = () => {
                 <TextSection>
                 <FadeInLeft>
                     <Header color="black" as="h1">
-                    Book more jamboree. Streamline planning. Thrill your guests.
+                    Book more with jamboree@. Streamline planning. Thrill your guests.
                     </Header>
                     <Header as="h3" className="active-color">jamboree@ is always free for venues.</Header>
                     <Button as={Link} to="/signup" color="red">
