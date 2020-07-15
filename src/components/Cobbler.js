@@ -90,7 +90,7 @@ const BlackContainer = styled.div`
 export const Cobbler = () => {
     return (
         <>
-        <div className="container-fluid background-img-Cobbler mx-0 px-0">
+        <div className="container-fluid background-img-cobbler mx-0 px-0">
         <FadeInRight>
         <div className= "background-img-height text-center" style={{background:"transparent"}}>
             

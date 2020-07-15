@@ -61,7 +61,7 @@ export const LandingPage = () => {
             <div className="my-3"></div>
         
             <p className="lavender">
-                Helping you build better relationships with your guests and improve your margins.
+                Helping you build better relationships with your customers and improve your margins.
             </p>
          
             <Button className="mt-3" as={Link} to="/signup" style={{width:'50%', backgroundColor:'rgba(218, 31, 87, 0.8)'}} circular animated="vertical">
@@ -84,7 +84,7 @@ export const LandingPage = () => {
                 <FadeInRight>
                 <Header as="h3" style={{color:'white'}}>Online Ordering Platform</Header>
                 <Header as="h1" className="black">Cobbler<span style={{fontSize:'1rem', display:'inline-block',transform:'translateY(-1rem)'}}>®</span> to go. Curbside pickup on your terms</Header>
-                <p className="lead">Own the relationship with your customers with little effort.</p>
+                <p className="lead">Own the relationship with your customers with ease.</p>
                 
                 <div className="btn-group">
                 
@@ -133,8 +133,8 @@ export const LandingPage = () => {
             <div className="text-card-panel text-center">
                 <FadeInRight>
                 <Header as="h3" className="active-color">Event Management Platform</Header>
-                <Header as="h1" className="lavender">jamboree@<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span> makes managing jamboree simple</Header>
-                <p className="lead lightgrey">jamboree@ is your event planning solution, putting the features you need to manage your jamboree at your fingertips.</p>
+                <Header as="h1" className="lavender">jamboree@<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span> makes planning simple</Header>
+                <p className="lead lightgrey">jamboree@ is your event planning solution, putting the features you need to manage your upcoming events at your fingertips.</p>
                 <div className="btn-group">
 
                     <div className="center">
@@ -173,8 +173,8 @@ export const LandingPage = () => {
 
         <BlackContainer className="text-center">
             <FadeInSection>
-            <Header as="h1">It's Your Dream. Keep It.</Header>
-            <p className="lead white">We recognize that you are the backbone of our communities. During these uncertain times and after things return to normal — we are here to help you keep your dream alive.</p>
+            <Header as="h1">It's Your Dream, to keep.</Header>
+            <p className="lead white">We recognize that you are the backbone of our communities. During these uncertain times and after things return to normal — we are here to support you and keep your dreams alive.</p>
             </FadeInSection>
         </BlackContainer>
         

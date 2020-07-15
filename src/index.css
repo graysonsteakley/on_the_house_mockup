@@ -110,7 +110,7 @@ a, h1{
   
 }
 
-.background-img-taters::before{
+.background-img-cobbler::before{
   content: "";
   position: absolute;
   z-index: -1;
@@ -119,7 +119,7 @@ a, h1{
   width: 100%; height: 100%;
   filter: opacity(0.7);
   background-color: #000000;
-  background-image: url("https://dev-allofthehouse.pantheonsite.io/wp-content/uploads/2020/04/GettyImages-525498662_ipad-sm-1920.jpg");
+  background-image: url("./local_images/cobbler.jpg");
   background-position: center center;
   background-position-x: center;
   background-position-y: center;
@@ -214,22 +214,31 @@ align-items: center;
 }
 
 
-.background-img-events{
-  background-image: url("https://dev-allofthehouse.pantheonsite.io/wp-content/uploads/2020/04/iStock-626177284-sm-1920.jpg");
+.background-img-jamboree::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; 
+  left: 0;
+  width: 100%; height: 100%;
+  filter: opacity(0.5);
+  background-color: #000000;
+  background-image: url('./local_images/GettyImages-660307462-sm-1920.jpg');
   background-position: center center;
   background-position-x: center;
   background-position-y: center;
-  background-repeat: no-repeat;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
   background-size: cover;
-  min-height: 90vh;
-  margin-top: -4.2rem;
 }
 
+
+.background-img-jamboree{
+  min-height: 90vh;
+  margin-top: -4.2rem;
+  position: relative;
+}
 @media only screen and (max-width: 760px) {
   
-  .background-img-taters{
+  .background-img-cobbler{
   margin-top: 0;
   }
 
@@ -237,7 +246,7 @@ align-items: center;
 
 @media only screen and (max-width: 760px) {
   
-  .background-img-events{
+  .background-img-jamboree{
     margin-top: 0;
   }
 
