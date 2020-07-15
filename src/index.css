@@ -205,8 +205,13 @@ align-items: center;
 }
 
 
+.logo-scale-nav{
+  transform: scale(1.8);
+}
 
-
+.logo-scale-nav-mob{
+  transform: scale(2.2);
+}
 
 
 .background-img-events{
