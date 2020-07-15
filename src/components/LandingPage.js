@@ -83,7 +83,7 @@ export const LandingPage = () => {
             <div className="text-card-panel text-center">
                 <FadeInRight>
                 <Header as="h3" style={{color:'white'}}>Online Ordering Platform</Header>
-                <Header as="h1" className="black">Taters<span style={{fontSize:'1rem', display:'inline-block',transform:'translateY(-1rem)'}}>®</span> to go. Curbside pickup on your terms</Header>
+                <Header as="h1" className="black">Cobbler<span style={{fontSize:'1rem', display:'inline-block',transform:'translateY(-1rem)'}}>®</span> to go. Curbside pickup on your terms</Header>
                 <p className="lead">Own the relationship with your customers with little effort.</p>
                 
                 <div className="btn-group">
@@ -133,8 +133,8 @@ export const LandingPage = () => {
             <div className="text-card-panel text-center">
                 <FadeInRight>
                 <Header as="h3" className="active-color">Event Management Platform</Header>
-                <Header as="h1" className="lavender">Events@<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span> makes managing events simple</Header>
-                <p className="lead lightgrey">Events@ is your event planning solution, putting the features you need to manage your events at your fingertips.</p>
+                <Header as="h1" className="lavender">jamboree@<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span> makes managing jamboree simple</Header>
+                <p className="lead lightgrey">jamboree@ is your event planning solution, putting the features you need to manage your jamboree at your fingertips.</p>
                 <div className="btn-group">
 
                     <div className="center">
@@ -180,7 +180,7 @@ export const LandingPage = () => {
         
         <div className="background-img-questions text-center p-5">
         <FadeInSection>
-        <Header as="h1" style={{color:"white", fontSize: "3rem"}}>Taters and Events@ are free products helping
+        <Header as="h1" style={{color:"white", fontSize: "3rem"}}>Cobbler and jamboree@ are free products helping
               <Typed
                 className="typed"
                 strings={[

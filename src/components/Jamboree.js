@@ -93,10 +93,10 @@ const BlackContainer = styled.div`
 
 `;
 
-export const Events = () => {
+export const Jamboree = () => {
     return (
         <>
-        <div style={{margin:'0',padding:'0'}} className="container-fluid background-img-events mx-0 px-0">
+        <div style={{margin:'0',padding:'0'}} className="container-fluid background-img-jamboree mx-0 px-0">
             
             <FadeInRight>
                 <div className= "background-img-height text-center" style={{background:"transparent"}}>
@@ -106,7 +106,7 @@ export const Events = () => {
                         YOUR EVENT MANAGEMENT PLATFORM
                         </p>
                         <Header className="d-none d-sm-none d-md-block" as="h1" style={{fontSize: '3.5rem'}}>
-                            Events@
+                            jamboree@
                             <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
                             is your free event planning solution putting the features you need every day at your fingertips. 
                         </Header>
@@ -130,9 +130,9 @@ export const Events = () => {
                 <TextSection>
                 <FadeInLeft>
                     <Header color="black" as="h1">
-                    Book more events. Streamline planning. Thrill your guests.
+                    Book more jamboree. Streamline planning. Thrill your guests.
                     </Header>
-                    <Header as="h3" className="active-color">Events@ is always free for venues.</Header>
+                    <Header as="h3" className="active-color">jamboree@ is always free for venues.</Header>
                     <Button as={Link} to="/signup" color="red">
                         Get Started&nbsp; <i class="fa fa-sign-out " aria-hidden="true"></i>
                     </Button>
@@ -150,13 +150,13 @@ export const Events = () => {
            <TextSection className="mx-5 px-5 text-center">
                 <FadeInLeft>
                 <Header className="d-none d-sm-none d-md-block black text-center" as="h1" style={{fontSize: '3.5rem'}}>
-                Event organizers want simplicity. You want efficiency. Events@
+                Event organizers want simplicity. You want efficiency. jamboree@
                     <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
                     &nbsp;delivers.
                 </Header>
                     <p className="lead black">
-                    Events@ is an event management platform that helps venues of any size book more events—faster. 
-                    As anyone that manages events knows, no one person can work 24/7. Events@ puts an end to cobbled together event management solutions or solutions that are overbuilt and complicated. Events@ reduces coordinator fatigue and ensures a quick response to your customers on every aspect of booking and staging an event.
+                    jamboree@ is an event management platform that helps venues of any size book more jamboree—faster. 
+                    As anyone that manages jamboree knows, no one person can work 24/7. jamboree@ puts an end to cobbled together event management solutions or solutions that are overbuilt and complicated. jamboree@ reduces coordinator fatigue and ensures a quick response to your customers on every aspect of booking and staging an event.
                     </p>
 
                 </FadeInLeft>
@@ -179,13 +179,13 @@ export const Events = () => {
            <TextSection className="mx-5 px-5 text-center">
                 <FadeInLeft>
                 <Header className="d-none d-sm-none d-md-block black text-center" as="h1" style={{fontSize: '3.5rem'}}>
-                Who Uses Events@
+                Who Uses jamboree@
                     <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
                     
                 </Header>
                     <p className="lead black">
-                    Events@ is an event management platform that helps venues of any size book more events—faster. 
-                    As anyone that manages events knows, no one person can work 24/7. Events@ puts an end to cobbled together event management solutions or solutions that are overbuilt and complicated. Events@ reduces coordinator fatigue and ensures a quick response to your customers on every aspect of booking and staging an event.
+                    jamboree@ is an event management platform that helps venues of any size book more jamboree—faster. 
+                    As anyone that manages jamboree knows, no one person can work 24/7. jamboree@ puts an end to cobbled together event management solutions or solutions that are overbuilt and complicated. jamboree@ reduces coordinator fatigue and ensures a quick response to your customers on every aspect of booking and staging an event.
                     </p>
 
                 </FadeInLeft>

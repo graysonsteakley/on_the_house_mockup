@@ -87,10 +87,10 @@ const BlackContainer = styled.div`
 
 `;
 
-export const Taters = () => {
+export const Cobbler = () => {
     return (
         <>
-        <div className="container-fluid background-img-taters mx-0 px-0">
+        <div className="container-fluid background-img-Cobbler mx-0 px-0">
         <FadeInRight>
         <div className= "background-img-height text-center" style={{background:"transparent"}}>
             
@@ -100,14 +100,14 @@ export const Taters = () => {
             YOUR AFFORDABLE CURBSIDE PICKUP SOLUTION
             </p>
             <Header className="d-none d-sm-none d-md-block" as="h1" style={{fontSize: '3.5rem'}}>
-                Taters
+                Cobbler
                 <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
-                 helps you build stronger relationships with your customers.
+                 helps you build closer relationships with your customers.
             </Header>
             <Header className="d-block d-sm-block d-md-none" as="h1" style={{fontSize: '2.5rem'}}>
-                Taters
+                Cobbler
                 <span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®&nbsp;&nbsp;</span>
-                 helps you build stronger relationships with your customers.
+                 helps you build closer relationships with your customers.
             </Header>
             </div>
 
@@ -120,7 +120,7 @@ export const Taters = () => {
         <WhiteContainer className="text-center p-4">
             <FadeInSection>
             <Header color="black" style={{fontSize: '3rem', marginBottom:'5rem'}} as="h1">
-            Taters<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span>&nbsp; is a curbside pickup platform built by the industry for the industry.
+            Cobbler<span style={{fontSize:'1rem',display:'inline-block',transform:'translateY(-1rem)'}}>®</span>&nbsp; is a curbside pickup platform built by the industry for the industry.
             </Header>
             </FadeInSection>
             <TwoColContainer>
@@ -130,7 +130,7 @@ export const Taters = () => {
                     Take back your customers
                     </Header>
                     <p className="lead black">
-                    Taters removes the barriers that delivery companies place between you and your customers.
+                    Cobbler removes the barriers that delivery companies place between you and your customers.
                     </p>
                     <Button href="/" color="red">
                         Schedule a Demo&nbsp; <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
@@ -165,10 +165,10 @@ export const Taters = () => {
                 <TextSection>
                     <Header as="h3" className="active-color">No Contracts. No Recurring Fees.</Header>
                     <Header color="black" as="h1">
-                    Protecting your margins
+                    Securing your margins
                     </Header>
                     <p className="lead black">
-                    People just like you built Taters, and we understand the challenges of the industry. That’s why we developed a set of tools priced to protect your margins with no monthly contracts or monthly recurring fees.                    </p>
+                    People just like you built Cobbler, and we understand the challenges of the industry. That’s why we developed a set of tools priced to protect your margins with no monthly contracts or monthly recurring fees.                    </p>
 
                 </TextSection>
                 </FadeInRight>
@@ -182,12 +182,12 @@ export const Taters = () => {
             
                 <FadeInLeft>
                 <TextSection>
-                    <Header as="h3" className="active-color">Leveling the field</Header>
+                    <Header as="h3" className="active-color">Leveling the playing field</Header>
                     <Header color="black" as="h1">
-                    Fair commissions
+                    Fair stakes
                     </Header>
                     <p className="lead black">
-                    You spoke and we listened. You’re tired of being charged high commissions for curbside pickup. Taters charges an ultra-low 2.9% + 10¢ credit card processing fee. That’s it!
+                    You spoke and we listened. You’re tired of being charged high commissions for curbside pickup. Cobbler charges an ultra-low 2.1% + 5¢ credit card processing fee. That’s it!
                     </p>
                 </TextSection>
                 </FadeInLeft>
@@ -221,10 +221,10 @@ export const Taters = () => {
                 <TextSection>
                     <Header as="h3" className="active-color">You're in control</Header>
                     <Header color="black" as="h1">
-                    Fees on your terms
+                    Fees on your court
                     </Header>
                     <p className="lead black">
-                    Taters believes in putting the service fees in the hands of the restaurant. Taters provides an optional convenience fee that can be applied to each guest purchase if needed.
+                    Cobbler believes in putting the service fees in the hands of the restaurant. Cobbler provides an opt-in convenience fee that can be applied to each guest purchase if needed.
                     </p>
                     <Button href="/" color="red">
                         Schedule a Demo&nbsp; <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
