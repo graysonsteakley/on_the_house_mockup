@@ -149,8 +149,8 @@ export const NavBar = () => {
             <Link to="/cobbler"  onClick={()=>{toggleMenu(); toggleIconOff();}}>
             <Segment className="hoverDropDown" inverted attached='top'>Cobbler</Segment>
             </Link>
-            <Link to="/jamboreeat" onClick={()=>{toggleMenu(); toggleIconOff();}}>
-            <Segment className="hoverDropDown" inverted attached>Event@</Segment>
+            <Link to="/jamboree" onClick={()=>{toggleMenu(); toggleIconOff();}}>
+            <Segment className="hoverDropDown" inverted attached>jamboree@</Segment>
             </Link>
             <Link to="/signin"  onClick={()=>{toggleMenu(); toggleIconOff();}}>
             <Segment className="hoverDropDown" inverted attached='bottom'>Sign In</Segment>

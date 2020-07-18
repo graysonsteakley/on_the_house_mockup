@@ -56,8 +56,8 @@ export const Footer = () => {
             </div>
         </FooterContainer>
          <FooterContainer className="text-center border-dark border-top align-items-center mt-neg-3 pb-5">
-             <img src="./images/AOH-Bug-White@2x.png" style={{width:'65px'}} alt="LOGO-with red dot"/>
-             <p className="lead align-item-start" style={{color: '#999'}}>© 2020 Copyright All of the House, Inc. All rights reserved. Various trademarks held by their respective owners.</p>
+             <img src="./images/h-logo.svg" style={{width:'65px'}} alt="LOGO"/>
+             <p className="lead align-item-start" style={{color: '#999'}}>© 2020 Copyright On the House, Inc. All rights reserved. Various trademarks held by their respective owners.</p>
          </FooterContainer>
          </>
     )
